@@ -1,0 +1,2 @@
+cd ~/.config/vpn
+sudo openvpn --config mobits.ovpn --auth-user-pass auth --askpass private_key --data-ciphers AES-256-GCM:AES-256-CBC
