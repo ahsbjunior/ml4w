@@ -2,10 +2,12 @@
 # INIT
 # -----------------------------------------------------
 eval "$(starship init bash)"
+eval $(thefuck --alias fodasse)
 # -----------------------------------------------------
 # Exports
 # -----------------------------------------------------
 export EDITOR=nvim
+export SUDO_EDITOR=nvim
 export PATH="/usr/lib/ccache/bin/:$PATH"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:~/.local/bin/
