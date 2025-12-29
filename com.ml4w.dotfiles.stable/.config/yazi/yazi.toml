@@ -28,7 +28,16 @@ sixel_fraction = 15
 ueberzug_scale = 1
 ueberzug_offset = [0, 0, 0, 0]
 
+[manager]
+prepend_rules = [
+    # Quando você abrir uma imagem, ele listará as opções abaixo
+    { mime = "image/*", use = [ "view", "edit" ] }
+]
+
 [opener]
+view = [
+    { run = 'loupe "$@"', detach = true, desc = "Visualizador (Gnome)" }
+]
 edit = [
     { run = 'nvim "$@"', desc = "nvim", block = true, for = "unix" },
     { run = 'code %*', orphan = true, desc = "code", for = "windows" },
