@@ -11,11 +11,12 @@
 
 /* ---- Configuration ---- */
 configuration {
-    modi:                       "drun,filebrowser,window,run";
+    modi:                       "drun,calc,filebrowser,window,run";
     font:                       "Fira Sans 11";
     show-icons:                 true;
     display-drun:                " ";
     display-run:                 " ";
+    display-calc:                "∑";
     display-filebrowser:         "";
     display-window:              "";
 	drun-display-format:        "{name}";
@@ -82,10 +83,10 @@ dummy {
 // Modes //
 mode-switcher {
     orientation:                 horizontal;
-    width:                       6.6em;
+    width:                       6.0em;
     enabled:                     true;
     padding:                     1.5em;
-    spacing:                     1.5em;
+    spacing:                     1.0em;
     background-color:            transparent;
 }
 

@@ -19,7 +19,7 @@
   color: @text;
   font-size: 1rem;
   font-weight: 900;
-  all: unset;
+  /*all: unset;*/
   font-family: "Fira Sans Semibold", "Font Awesome 7 Free",
   "Font Awesome 7 Brands", "Font Awesome 6 Free", "Font Awesome 6 Brands",
   FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -40,7 +40,7 @@
   background: @base;       /* translucent blur */
   border-radius: 10px;
   border: 2px solid @primary;
-  margin: 5px 10px;
+  margin: 5px 5px;
 }
 
 /* Critical floating notifications (still blurred but with error tint) */
