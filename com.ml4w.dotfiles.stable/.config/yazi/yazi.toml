@@ -18,21 +18,22 @@ mouse_events = ["click", "scroll"]
 
 [preview]
 tab_size = 2
-max_width = 600
-max_height = 900
-cache_dir = ""
+max_width = 1000
+max_height = 1000
 image_delay = 30
-image_filter = "triangle"
-image_quality = 75
-sixel_fraction = 15
-ueberzug_scale = 1
-ueberzug_offset = [0, 0, 0, 0]
+image_filter = "lanczos3" # Melhor qualidade que 'triangle'
+image_quality = 80
+
+# ESSENCIAL PARA HYPRLAND:
+# Se você usa o terminal Kitty, use "kitty". 
+# Se usa Alacritty/Foot, use "sixel" ou "chafa".
+preview_protocol = "kitty"
 
 [manager]
-prepend_rules = [
-    # Quando você abrir uma imagem, ele listará as opções abaixo
-    { mime = "image/*", use = [ "view", "edit" ] }
-]
+# prepend_rules = [
+#     # Quando você abrir uma imagem, ele listará as opções abaixo
+#     { mime = "image/*", use = [ "view", "edit" ] }
+# ]
 
 [opener]
 view = [
@@ -44,7 +45,7 @@ edit = [
     { run = 'code -w %*', block = true, desc = "code (block)", for = "windows" },
 ]
 open = [
-    { run = 'xdg-open "$1"', desc = "Open", for = "linux" },
+    { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
     { run = 'open "$@"', desc = "Open", for = "macos" },
     { run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
 ]
