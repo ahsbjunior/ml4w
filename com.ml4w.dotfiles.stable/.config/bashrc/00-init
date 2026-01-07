@@ -12,3 +12,9 @@ export SUDO_EDITOR=nvim
 export PATH="/usr/lib/ccache/bin/:$PATH"
 export PATH=$PATH:~/.cargo/bin/
 export PATH=$PATH:~/.local/bin/
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ahsbjunior/.local/bin/google-cloud-sdk/path.bash.inc' ]; then . '/home/ahsbjunior/.local/bin/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ahsbjunior/.local/bin/google-cloud-sdk/completion.bash.inc' ]; then . '/home/ahsbjunior/.local/bin/google-cloud-sdk/completion.bash.inc'; fi

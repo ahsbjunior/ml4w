@@ -18,7 +18,6 @@ alias vim='$EDITOR'
 alias ts='~/.config/ml4w/scripts/arch/snapshot.sh'
 alias wifi='nmtui'
 alias cleanup='~/.config/ml4w/scripts/arch/cleanup.sh'
-alias y='yazi'
 
 # -----------------------------------------------------
 # ML4W Apps
@@ -77,3 +76,10 @@ alias setkb='setxkbmap de;echo "Keyboard set back to de."'
 # SUDOERS
 # -----------------------------------------------------
 alias nvim_su='sudoedit'
+
+# -----------------------------------------------------
+# PERSONALIZADO
+# -----------------------------------------------------
+alias y='yazi'
+alias ber='bundle exec ruby'
+
