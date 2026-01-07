@@ -1,1 +1,1 @@
-pinta
+flatpak run be.alexandervanhee.gradia
