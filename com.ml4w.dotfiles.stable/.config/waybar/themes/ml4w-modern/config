@@ -17,7 +17,7 @@
         "hyprland/workspaces",
         //"wlr/taskbar",
         //"group/quicklinks",
-        //"custom/nowplaying",        
+        "custom/nowplaying",        
         "custom/empty"
     ],
     // Modules Center
@@ -27,18 +27,18 @@
     ],
     // Modules Right    
     "modules-right": [
+        "clock",
         "custom/updates",
         "pulseaudio",
         //"backlight",
         "bluetooth",
         "network",
-        "battery",
+        //"battery",
         "group/hardware",
         "group/tools",
         "tray",
         "custom/notification",
-        "custom/exit",
         "custom/ml4w-welcome",
-        "clock"
+        "custom/exit"
     ]
 }
