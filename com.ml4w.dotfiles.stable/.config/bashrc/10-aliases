@@ -82,4 +82,4 @@ alias nvim_su='sudoedit'
 # -----------------------------------------------------
 alias y='yazi'
 alias ber='bundle exec ruby'
-
+alias venv='source .venv/bin/activate'

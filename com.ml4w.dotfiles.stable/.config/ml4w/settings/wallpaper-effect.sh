@@ -1,1 +1,1 @@
-blackwhite-blur
+off
