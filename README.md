@@ -8,9 +8,10 @@
 - Gradia (para papel de parede)
 - Yay
 - Fastfetch
+- keyd (para mapear HOME e END igual ao Mac)
 
 ```Bash
-sudo pacman -S kitty git neovim yay fastfetch
+sudo pacman -S kitty git neovim yay fastfetch keyd
 ```
 
 Exclusivo do Hyprland
