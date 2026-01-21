@@ -139,3 +139,29 @@ Após gerar, rode o código abaixo:
 ```Bash
 cat ~/.ssh/id_ed25519.pub
 ```
+## Links
+
+Atenção: presume-se que o script será rodado da pasta inicial do repositório.
+
+```Bash
+#bash
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.bashrc ~/
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/bashrc ~/.config/
+
+#kitty
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/kitty ~/.config/
+
+#neovim
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/nvim ~/.config/
+
+#starship
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/starship.toml ~/.config/
+
+#yazi
+ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/yazi ~/.config/
+
+
+#keyd
+sudo ln -s $(pwd)/com.ml4w.dotfiles.stable/.config/keyd /etc/
+sudo systemctl enable --now keyd
+```
