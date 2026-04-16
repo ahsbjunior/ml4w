@@ -10,6 +10,7 @@
 - Fastfetch
 - keyd (para mapear HOME e END igual ao Mac)
 - lazygit
+- kargos (permite rodar script e mostrar output no painel no KDE)
 
 ```Bash
 sudo pacman -S kitty git neovim yay fastfetch keyd
