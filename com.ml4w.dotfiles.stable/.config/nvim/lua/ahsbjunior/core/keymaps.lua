@@ -29,21 +29,23 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
-
 -- Clipboard
-keymap.set("i", "<C-v>", "<C-r>+", {desc = "Paste with CTRL-V in Insert Mode"}) -- Paste with CTRL-V in Insert Mode
-
+keymap.set("i", "<C-v>", "<C-r>+", { desc = "Paste with CTRL-V in Insert Mode" }) -- Paste with CTRL-V in Insert Mode
 
 -- New line
 keymap.set("n", "<CR>", "0o<esc>", { desc = "Press enter to add new line" }) -- Pressionar ENTER pra adicionar nova linha
 keymap.set("n", "<S-CR>", "O<esc>", { desc = "Press shift-enter to add new line above" }) -- Pressionar SHIFT-ENTER pra adicionar nova linha acima
 
 -- Select all
-keymap.set("n", "<C-a>", "ggVG", {desc = "CTRL-A to select all"})
+keymap.set("n", "<C-a>", "ggVG", { desc = "CTRL-A to select all" })
 
 -- Comentarios em python
-keymap.set("v", "<leader>c#", ":'<,'>s:^:#<CR>", {desc = "Add # to comment Python code."})
+keymap.set("v", "<leader>c#", ":'<,'>s:^:#<CR>", { desc = "Add # to comment Python code." })
 
 -- Tree
 keymap.set("n", "<leader>ee", "<cmd>Neotree toggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 keymap.set("n", "<leader>eb", "<cmd>Neotree source=buffers position=float<CR>", { desc = "Shows buffers" }) -- Shows buffers
+
+-- Formatador
+keymap.set("n", "<leader>pj", ":%!jq .<CR>", { desc = "Format JSON" }) -- Format JSON
+keymap.set("v", "<leader>pj", ":'<,'>!jq .<CR>", { desc = "Format JSON" }) -- Format JSON
