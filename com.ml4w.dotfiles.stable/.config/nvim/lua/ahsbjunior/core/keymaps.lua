@@ -6,6 +6,10 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
+-- mudando j e k para mudar de linhas na forma visual
+keymap.set({ "n", "x" }, "j", "gj", { noremap = true, silent = true })
+keymap.set({ "n", "x" }, "k", "gk", { noremap = true, silent = true })
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
