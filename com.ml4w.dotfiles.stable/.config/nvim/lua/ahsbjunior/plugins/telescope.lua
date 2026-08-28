@@ -40,6 +40,14 @@ return {
 				{ desc = "Find string under cursor in cwd" }
 			)
 			keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find TODO" })
+			keymap.set("n", "<leader>fe", function()
+				require("telescope.builtin").diagnostics({
+					bufnr = 0,
+				})
+			end, { desc = "Find diagnostics current buffer" })
+			keymap.set("n", "<leader>fE", function()
+				require("telescope.builtin").diagnostics()
+			end, { desc = "Find diagnostics Workspace" })
 		end,
 	},
 	{
